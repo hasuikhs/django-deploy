@@ -26,7 +26,7 @@ SECRET_KEY = config('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config('DEBUG')
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['herokuapp.com']
 
 
 # Application definition
@@ -166,4 +166,4 @@ REST_FRAMEWORK = {
 
 # heroku settins
 import django_heroku
-django_heroku(locals())
+django_heroku.settings(locals())
